@@ -21,7 +21,8 @@ background-color: #BC9693;
     display:inline-flexbox;
     height: 600px;
     padding: 25px;
-}
+    background-image: url("/images/Mother\ Of\ Pearl\ 5.jpg");
+    }
 .content{
     display: flex;
     width: 100%;
@@ -34,5 +35,6 @@ img{
 footer{
     background-color: #BC9693;
     text-align: center;
+    display: flex;
 
 }
