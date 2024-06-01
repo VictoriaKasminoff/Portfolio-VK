@@ -1,3 +1,8 @@
+header {
+    display: flex;
+background-color: #BC9693;
+}
+
 .fa-solid {
     color: #252225;
 }
@@ -5,5 +10,29 @@
     display: flex;
     list-style: none;
     align-content: flex-start;
+    margin: 0;
 }
+.logo {
+    width: 23%;
+    padding: 1%;
 
+}
+.heroimg{
+    display:inline-flexbox;
+    height: 600px;
+    padding: 25px;
+}
+.content{
+    display: flex;
+    width: 100%;
+    margin-left: 0 auto;
+}
+img{
+    height: 50%;
+    width: 50%;
+}
+footer{
+    background-color: #BC9693;
+    text-align: center;
+
+}
