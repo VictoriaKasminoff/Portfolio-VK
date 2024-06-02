@@ -1,16 +1,19 @@
-header {
+/* header {
     display: flex;
-background-color: #BC9693;
-}
+    background-color: #BC9693;
+} */
 
 .fa-solid {
     color: #252225;
 }
 .inline-block ul {
     display: flex;
+    /* padding: 50px 963px 25px 112px; */
+    align-items: center;
+    gap: 200px;
     list-style: none;
-    align-content: flex-start;
-    margin: 0;
+    background: url(<path-to-image>) #BC9693 50% / contain no-repeat;
+    width: 100%;
 }
 .logo {
     width: 23%;
@@ -20,13 +23,15 @@ background-color: #BC9693;
 .heroimg{
     display:inline-flexbox;
     height: 600px;
-    padding: 25px;
-    background-image: url("/images/Mother\ Of\ Pearl\ 5.jpg");
+    padding: 50px;
+    border-radius: 25px;
     }
 .content{
     display: flex;
     width: 100%;
     margin-left: 0 auto;
+    padding: 10px;
+    border: 2px solid var(--Darkest, #252225);
 }
 img{
     height: 50%;
@@ -35,6 +40,32 @@ img{
 footer{
     background-color: #BC9693;
     text-align: center;
+    display: inline-flex;
+    gap: 200px;
+    width: 100%;
+    align-items: center;
+
+}
+
+.Orchid {
+    width: 50px;
+    padding: 0px
+}
+.Flower-Child-Area{
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Projects{
+    padding:0 10px;
+}
+.designprojects{
+    height: 600px;
+    width: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 50px;
 
 }
