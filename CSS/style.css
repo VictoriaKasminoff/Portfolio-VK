@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+
 @font-face {
     font-family: 'Florabetic';
     src: url(/fonts/Florabetic.ttf)
@@ -5,29 +8,48 @@
 
 body {
     margin: 0;
+    background-image: url('/images/Mother\ Of\ Pearl\ 5.jpg');
+    background-size: cover;
 }
 
 /* NAVBAR START */
 
-.fa-solid {
-    color: #252225;
-}
-
-.inline-block ul {
-    display: flex;
-    /* padding: 50px 963px 25px 112px; */
-    align-items: center;
-    gap: 200px;
-    list-style: none;
-    background: url(<path-to-image>) #BC9693 50% / contain no-repeat;
+.nav-bar {
     width: 100%;
-    padding: 25px;
-}
-.logo {
-    width: 23%;
-    padding: 1%;
+    height: 12%;
+    background-color: #BC9693;
     display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 200px;
+    padding-left: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
 
+.nav-bar ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-bar ul li {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.logo {
+    font-family: "Florabetic", sans-serif;
+    color: #252225;
+    margin: 0;
+}
+
+.linkedin-logo {
+    width: 37px;
 }
 
 /* NAVBAR END */
@@ -39,17 +61,33 @@ body {
     align-items: center;
     justify-content: center;
     margin: 50px;
-    height: 40%;
+    padding-top: 50px;
     border-radius: 25px;
-    object-fit: contain;
 }
 
-.himynameis{
+.himynameis {
     border: 2px solid var(--Darkest, #252225);
     border-radius: 25px;
     background-color: #BC9693;
     margin-right: 50px;
-    height: 100%;
+    width: 50%;
+}
+
+.himynameis p {
+    font-weight: 300;
+}
+
+.name-title {
+    text-align: right;
+}
+
+.name-title, .welcome {
+    font-weight: 500;
+}
+
+.himynameis-text {
+    font-family: "Laila", serif;
+    padding: 0 25px;
 }
 
 .introflower {
@@ -66,8 +104,7 @@ body {
 }
 
 .me-photo {
-    height: 50%;
-    width: 50%;
+    width: 40%;
     border: 2px solid var(--Darkest, #252225);
     border-radius: 25px;
 }
