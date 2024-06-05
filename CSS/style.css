@@ -1,11 +1,18 @@
-/* header {
-    display: flex;
-    background-color: #BC9693;
-} */
+@font-face {
+    font-family: 'Florabetic';
+    src: url(/fonts/Florabetic.ttf)
+}
+
+body {
+    margin: 0;
+}
+
+/* NAVBAR START */
 
 .fa-solid {
     color: #252225;
 }
+
 .inline-block ul {
     display: flex;
     /* padding: 50px 963px 25px 112px; */
@@ -14,38 +21,58 @@
     list-style: none;
     background: url(<path-to-image>) #BC9693 50% / contain no-repeat;
     width: 100%;
+    padding: 25px;
 }
 .logo {
     width: 23%;
     padding: 1%;
+    display: flex;
 
 }
+
+/* NAVBAR END */
+
+/* HOMEPAGE TOP SECTION START*/
+
 .heroimg{
-    display:inline-flexbox;
-    height: 600px;
-    padding: 50px;
-    border-radius: 25px;
-    }
-.content{
     display: flex;
-    width: 100%;
-    margin-left: 0 auto;
-    padding: 10px;
-    border: 2px solid var(--Darkest, #252225);
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    height: 40%;
+    border-radius: 25px;
+    object-fit: contain;
 }
-img{
+
+.himynameis{
+    border: 2px solid var(--Darkest, #252225);
+    border-radius: 25px;
+    background-color: #BC9693;
+    margin-right: 50px;
+    height: 100%;
+}
+
+.introflower {
+    width: 100%;
+    height: 90px;
+    position: relative;
+}
+
+.introflower img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 23px 23px;
+}
+
+.me-photo {
     height: 50%;
     width: 50%;
+    border: 2px solid var(--Darkest, #252225);
+    border-radius: 25px;
 }
-footer{
-    background-color: #BC9693;
-    text-align: center;
-    display: inline-flex;
-    gap: 200px;
-    width: 100%;
-    align-items: center;
 
-}
+/* HOMEPAGE TOP SECTION END*/
 
 .Orchid {
     width: 50px;
@@ -60,12 +87,25 @@ footer{
 .Projects{
     padding:0 10px;
 }
-.designprojects{
-    height: 600px;
-    width: 600px;
+.designprojects {
     display:flex;
     justify-content: center;
     align-items: stretch;
     padding: 50px;
 
+}
+
+.designprojects img {
+    margin: 0 50px;
+    height: 400px;
+    width: 400px;
+}
+
+footer{
+    display: inline-block;
+    background: url(<path-to-image>) #BC9693 50% / contain no-repeat;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    color: white
 }
