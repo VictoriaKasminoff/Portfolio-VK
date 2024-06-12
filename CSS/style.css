@@ -4,8 +4,10 @@
 
 @font-face {
     font-family: 'Florabetic';
-    src: url(/fonts/Florabetic.ttf)
+    src: url(./fonts/Florabetic.ttf)
 }
+
+/* LARGE DEVICES  */
 
 body {
     margin: 0;
@@ -22,7 +24,7 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 50px;
+    gap: 100px;
     padding-left: 15px;
     position: fixed;
     top: 0;
@@ -51,8 +53,8 @@ body {
 
 .logo {
     /* font-family: "Florabetic", sans-serif; */
-    color: #252225; *
-    /* margin: 0; */ */
+    color: #252225;
+    /* margin: 0; */
     /* height: 50%; */
     user-select: none;
 }
@@ -60,6 +62,10 @@ body {
 .linkedin-logo {
     width: 37px;
     margin-left: 50px;
+}
+
+.hamburger-icon {
+    display: none;
 }
 
 /* NAVBAR END */
@@ -72,14 +78,15 @@ body {
     justify-content: center;
     margin: 50px;
     padding: 50px 0;
+    gap: 50px;
     border-radius: 25px;
 }
 
 .himynameis {
-    border: 2px solid var(--Darkest, #252225);
+    border: 2px solid var(--Darkest, rgb(37, 34, 37));
     border-radius: 25px;
     background-color: #BC9693;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     width: 50%;
 }
 
@@ -148,6 +155,8 @@ h1{
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
     gap: 20px;
     width: 100%;
 }
@@ -177,4 +186,164 @@ footer{
     width: 100%;
     align-items: center;
     color: white
+}
+
+/* LARGE DEVICES */
+
+@media only screen and (min-width: 992px) and (max-width: 1300px) {
+    .designprojects {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .designprojects img {
+        height: 300px;
+        width: 300px;
+        border-radius: 25px;
+    }
+}
+
+/* MEDIUM DEVICES */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .me-photo {
+        width: 45%;
+        border: 2px solid var(--Darkest, #252225);
+        border-radius: 25px;
+    }
+
+    .himynameis {
+        align-self: center;
+        height: 400px;
+    }
+
+    .designprojects img {
+        height: 240px;
+        width: 240px;
+        border-radius: 25px;
+    }
+
+    .himynameis-text, h2 {
+        /* font-weight: 0; */
+        font-size: 1.1rem;
+    }
+
+    .himynameis-text, p {
+        font-size: 14px;
+    }
+
+    .nav-bar {
+        gap: 10px;
+    }
+
+    .linkedin-logo {
+        margin-left: 10px;
+    }
+    
+}
+
+/* SMALL DEVICES */
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .heroimg {
+        flex-direction: column-reverse;
+    }
+
+    .himynameis {
+        width: 100%;
+    }
+
+    .me-photo {
+        width: 60%;
+    }
+
+    .introflower {
+        width: 100%;
+        height: 55px;
+        position: relative;
+    }
+
+    .nav-bar ul {
+        display: none;
+    }
+
+    #nav-links {
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        background-color: #BC9693;
+    }
+
+    .linkedin-logo {
+        margin-left: 0;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .designprojects {
+        flex-direction: column;
+    }
+
+    .designprojects img {
+        height: 400px;
+        width: 400px;
+        border-radius: 25px;
+    }
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media only screen and (max-width: 600px) {
+    .nav-bar ul {
+        display: none;
+    }
+
+    #nav-links {
+        position: absolute;
+        top: 90%;
+        left: 80%;
+        background-color: #BC9693;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .linkedin-logo {
+        margin-left: 0;
+    }
+
+    .nav-bar {
+        gap: 70px;
+    }
+
+    .heroimg {
+        flex-direction: column-reverse;
+    }
+
+    .himynameis {
+        width: 100%;
+    }
+
+    .me-photo {
+        width: 60%;
+    }
+
+    .designprojects {
+        flex-direction: column;
+    }
+
+    .designprojects img {
+        height: 400px;
+        width: 400px;
+        border-radius: 25px;
+    }
 }
